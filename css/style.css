@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url(../img/IMG_2342.JPG);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.navBar{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    color: white;
+    margin: 14px 20px;
+    font-size: 30px;
+}
+.nav ul{
+    display: flex;
+    padding: 14px 16px;
+    list-style: none;
+}
+li a{
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+}
+li a:hover{
+    color: orange;
+}
+span{
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px;
+}
+.h{
+    color: orange;
+    border: none;
+}
+.main h2{
+    color: white;
+    margin-top: 15%;
+    font-size: 70px;
+    margin-left: 25px;
+}
+.main p{
+    color: white;
+    margin-left: 25px;
+    font-size: 25px;
+}
+.learn{
+    margin-left: 25px;
+}
+input{
+    background: orange;
+    border: none;
+    padding: 10px 12px;
+    margin-top: 15px;
+    width: 100px;
+    border-radius: 5px;
+}
+/* responsiveness */
+@media screen and (max-width:600px),(max-width:678px) {
+    .navBar{
+        flex-direction: column;
+    }
+    .nav ul{
+        flex-direction: column;
+    }
+    li{
+        padding: 15px;
+    }
+    .main h2{
+        font-size: 50px;
+        margin-top: 8px;
+    }
+    /* input{
+        width: 20%;
+    } */
+}
